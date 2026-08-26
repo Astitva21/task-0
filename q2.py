@@ -1,11 +1,11 @@
 def process_list(numbers):
-    import random
+    
     num = []
     result = []
 
-    n = random.randint(0,10)
+    n = int(input("Enter the number of elements in list:"))
     for i in range (0,n):
-        a = random.randint(-10,10)
+        a = int(input("Enter the element of list"))
         num.append(a)
 
 
