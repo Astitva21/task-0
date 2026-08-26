@@ -5,7 +5,7 @@ num = []
 #number allocation
 n = int(input("Enter the number of numbers:"))
 for i in range (0,n):
-    a = random.randint(0,10)
+    a = int(input("Enter the element of list:"))
     num.append(a)
 
 
