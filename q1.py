@@ -1,12 +1,7 @@
 
-num = []
-
-
 #number allocation
 n = int(input("Enter the number of numbers:"))
-for i in range (0,n):
-    a = int(input("Enter the element of list:"))
-    num.append(a)
+num = [int(x) for x in input("Enter numbers: ").split()]
 
 
 #for sum of numbers
@@ -21,7 +16,6 @@ max = 0
 for i in range(0,n):
     if max < num[i]:
         max = num[i]
-print(num)
 print(f"Max is:",max)
 
 
@@ -47,4 +41,4 @@ print(f"Number of even numbers:",even)
 
 #revrse of list
 num.reverse()
-print(num)
+print(*num)
