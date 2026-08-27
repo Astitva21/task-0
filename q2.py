@@ -1,12 +1,9 @@
 def process_list(numbers):
-    
     num = []
     result = []
 
-    n = int(input("Enter the number of elements in list:"))
-    for i in range (0,n):
-        a = int(input("Enter the element of list"))
-        num.append(a)
+    n = int(input("Enter the number of numbers:"))
+    num = [int(x) for x in input("Enter numbers: ").split()]
 
 
     #new list
@@ -27,3 +24,6 @@ def process_list(numbers):
     result.append(0)
     result.sort()
     print(result)
+
+
+process_list([1, -2, 3, -4, 5])
